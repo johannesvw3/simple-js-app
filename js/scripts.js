@@ -5,14 +5,16 @@ let pokemonList = [
     {name: "Eevee", height: 0.3, types: ["Normal"], evolutions: ["Umbreon", "Sylveon", "Leafeon", "Glaceon", "Vaporeon", "Jolteon", "Flareon", "Espeon"]}
     ];
 
-    for (let i = 0; i < pokemonList.length; i++) {
-        if (pokemonList[i].height <= 0.6) {
-            document.write(pokemonList[i].name + " (Height: " + pokemonList[i].height + ")" + " ")
+    pokemonList.forEach(function(pokemon) {
+        if (pokemon.height <= 0.6) {
+            document.write(pokemon.name + " (Height: " + pokemon.height + ")" + '<br>')
             }
+    });
 
-        if (pokemonList[i].height > 0.6) {
-            document.write(pokemonList[i].name + " (Height: " + pokemonList[i].height + ")" + " Wow, that's big! ")
+        pokemonList.forEach(function(pokemon) {
+        if (pokemon.height > 0.6) {
+            document.write(pokemon.name + " (Height: " + pokemon.height + ")" + " Wow, That's Big!")
             }
-        }; 
+    });
 
 
