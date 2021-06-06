@@ -1,0 +1,38 @@
+:root {
+    --bg-color: red;
+}
+
+html {
+    background-color: var(--bg-color);
+}
+
+ul {
+    border: 3px solid black;
+    width: 20%;
+    padding: 10px;
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 10px;;
+}
+
+.pokemon-button {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border-color: black;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.pokemon-button:active {
+    background-color: gold;
+    box-shadow: 2px 2px 2px black;
+    font-size: 15px;
+}
+
+.pokemon-button:hover {
+    background-color: rgb(113, 185, 233);
+    border: 3px solid black;
+}
