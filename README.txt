@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pokedex app
 Building a web app with **HTML**, **CSS** and **JS** that loads data from an external API(https://pokeapi.co/api/v2/pokemon).
 
@@ -18,3 +19,6 @@ The users will be able to click through a list of pokemons and see more details 
 
 
 
+=======
+
+>>>>>>> fa9ada5d4b035e30470dc9dc0ce894525f9d1734
