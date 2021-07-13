@@ -1,7 +1,6 @@
-pokemonRepository = (function () {
+let pokemonRepository = (function () {
 
 let pokedexPokemonList = document.querySelector('.list-group');
-let modalContainer = document.querySelector('#pokemon-modal');
 let modal = document.querySelector('.modal-content');
 
 let pokeName = document.createElement('h1');
@@ -23,7 +22,7 @@ let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
     }
 
     function add(pokemon) {
-        typeof pokemon == 'object' && "name" in pokemon ? pokemonList.push(pokemon) : console.log('wrong format')
+        typeof pokemon == 'object' && 'name' in pokemon ? pokemonList.push(pokemon) : console.log('wrong format')
     }
 
     function addListItem(pokemon){
@@ -31,11 +30,11 @@ let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
             pokemonItem.classList.add('group-list-item')
         let pokemonButton = document.createElement('button');
             pokemonButton.innerHTML = pokemon.name.toUpperCase();
-            pokemonButton.type = "button"
+            pokemonButton.type = 'button'
             pokemonButton.classList.add('btn');
             pokemonButton.classList.add('btn-primary');
-            pokemonButton.dataset.toggle = "modal"
-            pokemonButton.dataset.target = "#pokemon-modal"
+            pokemonButton.dataset.toggle = 'modal'
+            pokemonButton.dataset.target = '#pokemon-modal'
         pokedexPokemonList.appendChild(pokemonItem);
         pokemonItem.appendChild(pokemonButton);
         pokemonButton.addEventListener('click', function () {

@@ -60,6 +60,7 @@ li {
 /* Pokemon Modal */
 
 #pokemon-modal {
+    border-radius: 15px;
     position: absolute;
     left: 50%;
     top: 25%;
@@ -74,7 +75,7 @@ li {
     font-weight: bold;
     position: relative;
     width: 80%;
-    left: 9%;
+    left: 13%;
     margin-bottom: 20px;
     padding-top: 10px;
     background-color: rgb(214, 212, 212);
